@@ -1,0 +1,14 @@
+# Signing keys: never commit these.
+*.key
+*.pem
+*.der
+
+# Build artifacts.
+*.rpm
+*.src.rpm
+*.tar.gz
+
+# Local rpmbuild trees and scratch files.
+rpmbuild/
+rpmcheck/
+*.log
