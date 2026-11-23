@@ -387,7 +387,7 @@ do_remove() {
   sudo udevadm control --reload
 
   local rm_pkgs=() p
-  for p in aic8800d80-firmware akmod-aic8800d80 akmod-aic8800d80; do
+  for p in aic8800d80-firmware akmod-aic8800d80; do
     rpm -q "$p" >/dev/null 2>&1 && rm_pkgs+=("$p")
   done
   while read -r p; do
